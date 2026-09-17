@@ -1,0 +1,8 @@
+{
+  "name": "Jonota Equipment Training Center ERP",
+  "description": "Professional Training Center Management, Student Enrollment, Accounting, Cash/Bank Ledger, Staff Transactions, and Reporting System.",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}

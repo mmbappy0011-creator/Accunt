@@ -1,0 +1,395 @@
+{
+  "accountingPassword": "jonota2026",
+  "settings": {
+    "centerName": "JONOTA EQUIPMENT TRAINING CENTER",
+    "centerSubtitle": "Jonota Training Management System",
+    "centerTagline": "Professional Heavy Equipment Training, Certification & Operator Services",
+    "centerPhone": "+880 1711-000000",
+    "centerEmail": "info@jonotaetc.com",
+    "centerAddress": "Dhaka-Chittagong Highway, Siddhirganj, Narayanganj",
+    "authorizedSignature": "Omar Faroque",
+    "defaultCourses": [
+      {
+        "id": "c1",
+        "name": "Forklift",
+        "fee": 12000,
+        "duration": "10 Days"
+      },
+      {
+        "id": "c2",
+        "name": "Excavator",
+        "fee": 25000,
+        "duration": "30 Days"
+      },
+      {
+        "id": "c3",
+        "name": "Payloader",
+        "fee": 25000,
+        "duration": "30 Days"
+      },
+      {
+        "id": "c4",
+        "name": "Scaffolder",
+        "fee": 10000,
+        "duration": "15 Days"
+      },
+      {
+        "id": "c5",
+        "name": "Video",
+        "fee": 1000,
+        "duration": "Self-paced"
+      },
+      {
+        "id": "c6",
+        "name": "Cartificat",
+        "fee": 4500,
+        "duration": "Official Processing"
+      },
+      {
+        "id": "c7",
+        "name": "Other",
+        "fee": 5000,
+        "duration": "Custom"
+      }
+    ],
+    "inactivityLockMinutes": 15
+  },
+  "users": [
+    {
+      "id": "u1",
+      "username": "admin",
+      "name": "Omar Faroque (Administrator)"
+    }
+  ],
+  "students": [
+    {
+      "id": "st-1789645876684",
+      "serial": "JETC-2026-003",
+      "admissionDate": "2026-09-17",
+      "name": "bappy",
+      "fatherName": "kamal",
+      "mobile": "01790201078",
+      "address": "savar",
+      "course": "Forklift",
+      "courseFee": 12000,
+      "totalPaid": 6000,
+      "remainingDue": 6000,
+      "paymentStatus": "DUE",
+      "notes": "",
+      "createdAt": "2026-09-17T11:51:16.684Z",
+      "updatedAt": "2026-09-17T12:04:53.966Z"
+    },
+    {
+      "id": "st-001",
+      "serial": "JETC-2026-001",
+      "admissionDate": "2026-09-17",
+      "name": "Mohammad Karim",
+      "fatherName": "Abdul Rahim",
+      "mobile": "01812345678",
+      "address": "Signboard, Narayanganj",
+      "course": "Forklift",
+      "courseFee": 12000,
+      "totalPaid": 12000,
+      "remainingDue": 0,
+      "paymentStatus": "PAID",
+      "notes": "Test Student 1 - Full payment via Bank",
+      "createdAt": "2026-09-16T11:32:34.877Z",
+      "updatedAt": "2026-09-16T11:32:34.877Z"
+    },
+    {
+      "id": "st-002",
+      "serial": "JETC-2026-002",
+      "admissionDate": "2026-09-17",
+      "name": "Abdul Alim",
+      "fatherName": "Nurul Islam",
+      "mobile": "01798765432",
+      "address": "Kanchpur, Sonargaon",
+      "course": "Forklift",
+      "courseFee": 12000,
+      "totalPaid": 12000,
+      "remainingDue": 0,
+      "paymentStatus": "PAID",
+      "notes": "Test Student 2 - 6k Cash + 6k Bank",
+      "createdAt": "2026-09-16T23:32:34.877Z",
+      "updatedAt": "2026-09-16T23:32:34.877Z"
+    }
+  ],
+  "payments": [
+    {
+      "id": "pay-1789645876684",
+      "studentId": "st-1789645876684",
+      "studentSerial": "JETC-2026-003",
+      "studentName": "bappy",
+      "fatherName": "kamal",
+      "course": "Forklift",
+      "date": "2026-09-17",
+      "amount": 6000,
+      "previousDue": 12000,
+      "currentDue": 6000,
+      "paymentMethod": "Bank",
+      "notes": "Initial admission fee payment",
+      "createdAt": "2026-09-17T11:51:16.684Z"
+    },
+    {
+      "id": "pay-001",
+      "studentId": "st-001",
+      "studentSerial": "JETC-2026-001",
+      "studentName": "Mohammad Karim",
+      "fatherName": "Abdul Rahim",
+      "course": "Forklift",
+      "date": "2026-09-17",
+      "amount": 12000,
+      "previousDue": 12000,
+      "currentDue": 0,
+      "paymentMethod": "Bank",
+      "notes": "Bank Payment Admission Full",
+      "createdAt": "2026-09-16T11:32:34.877Z"
+    },
+    {
+      "id": "pay-002",
+      "studentId": "st-002",
+      "studentSerial": "JETC-2026-002",
+      "studentName": "Abdul Alim",
+      "fatherName": "Nurul Islam",
+      "course": "Forklift",
+      "date": "2026-09-17",
+      "amount": 6000,
+      "previousDue": 12000,
+      "currentDue": 6000,
+      "paymentMethod": "Cash",
+      "notes": "Installment 1 - Cash",
+      "createdAt": "2026-09-16T23:32:34.877Z"
+    },
+    {
+      "id": "pay-003",
+      "studentId": "st-002",
+      "studentSerial": "JETC-2026-002",
+      "studentName": "Abdul Alim",
+      "fatherName": "Nurul Islam",
+      "course": "Forklift",
+      "date": "2026-09-17",
+      "amount": 6000,
+      "previousDue": 6000,
+      "currentDue": 0,
+      "paymentMethod": "Bank",
+      "notes": "Installment 2 - Bank Transfer",
+      "createdAt": "2026-09-17T05:32:34.877Z"
+    }
+  ],
+  "expenses": [
+    {
+      "id": "exp-001",
+      "date": "2026-09-17",
+      "description": "Forklift Hydraulic Oil & Filter Maintenance (Bank Transfer)",
+      "category": "Maintenance",
+      "amount": 1000,
+      "paymentMethod": "Bank",
+      "notes": "Paid through Official Bank Account",
+      "createdAt": "2026-09-17T08:32:34.877Z"
+    }
+  ],
+  "staff": [
+    {
+      "id": "staff-1789645557588",
+      "name": "Forid Shekh",
+      "designation": "Senior Instructor",
+      "role": "Senior Instructor",
+      "mobile": "01790201079",
+      "phone": "01790201079",
+      "baseSalary": 25000,
+      "createdAt": "2026-09-17T11:45:57.588Z"
+    },
+    {
+      "id": "s1",
+      "name": "Farid",
+      "role": "Chief Instructor",
+      "phone": "01711000001"
+    },
+    {
+      "id": "s2",
+      "name": "Hossain",
+      "role": "Equipment Operator",
+      "phone": "01711000002"
+    },
+    {
+      "id": "s3",
+      "name": "Rabbi",
+      "role": "Trainer",
+      "phone": "01711000003"
+    },
+    {
+      "id": "s4",
+      "name": "Rubel",
+      "role": "Field Technician",
+      "phone": "01711000004"
+    },
+    {
+      "id": "s5",
+      "name": "Lisan",
+      "role": "Coordinator",
+      "phone": "01711000005"
+    },
+    {
+      "id": "s6",
+      "name": "Bappy",
+      "role": "Administrator",
+      "phone": "01711000006"
+    }
+  ],
+  "staffTransactions": [],
+  "bankTransactions": [
+    {
+      "id": "bt-1789645876684",
+      "date": "2026-09-17",
+      "description": "Student Payment - bappy (JETC-2026-003)",
+      "amount": 6000,
+      "transactionType": "Student Payment",
+      "reference": "pay-1789645876684",
+      "paymentId": "pay-1789645876684",
+      "notes": "Direct admission payment to Bank",
+      "createdAt": "2026-09-17T11:51:16.684Z"
+    },
+    {
+      "id": "bt-001",
+      "date": "2026-09-17",
+      "description": "Student Payment - Mohammad Karim (JETC-2026-001)",
+      "amount": 12000,
+      "transactionType": "Student Payment",
+      "reference": "PAY-001",
+      "paymentId": "pay-001",
+      "notes": "Admission fee direct bank deposit",
+      "createdAt": "2026-09-16T11:32:34.877Z"
+    },
+    {
+      "id": "bt-002",
+      "date": "2026-09-17",
+      "description": "Student Payment - Abdul Alim (JETC-2026-002)",
+      "amount": 6000,
+      "transactionType": "Student Payment",
+      "reference": "PAY-003",
+      "paymentId": "pay-003",
+      "notes": "Installment 2 direct bank transfer",
+      "createdAt": "2026-09-17T05:32:34.877Z"
+    },
+    {
+      "id": "bt-003",
+      "date": "2026-09-17",
+      "description": "Bank Expense - Hydraulic Maintenance",
+      "amount": 1000,
+      "transactionType": "Bank Expense",
+      "reference": "EXP-001",
+      "notes": "Official maintenance cheque/debit",
+      "createdAt": "2026-09-17T08:32:34.877Z"
+    }
+  ],
+  "courses": [
+    {
+      "id": "c1",
+      "name": "Forklift",
+      "fee": 12000,
+      "duration": "10 Days"
+    },
+    {
+      "id": "c2",
+      "name": "Excavator",
+      "fee": 25000,
+      "duration": "30 Days"
+    },
+    {
+      "id": "c3",
+      "name": "Payloader",
+      "fee": 25000,
+      "duration": "30 Days"
+    },
+    {
+      "id": "c4",
+      "name": "Scaffolder",
+      "fee": 10000,
+      "duration": "15 Days"
+    },
+    {
+      "id": "c5",
+      "name": "Video",
+      "fee": 1000,
+      "duration": "Self-paced"
+    },
+    {
+      "id": "c6",
+      "name": "Cartificat",
+      "fee": 4500,
+      "duration": "Official Processing"
+    },
+    {
+      "id": "c7",
+      "name": "Other",
+      "fee": 5000,
+      "duration": "Custom"
+    }
+  ],
+  "auditLogs": [
+    {
+      "id": "log-1789646739263-610",
+      "date": "2026-09-17",
+      "time": "12:05 PM",
+      "action": "Staff Transaction Deleted",
+      "details": "Deleted staff payment of ৳3000 for Farid",
+      "user": "Admin"
+    },
+    {
+      "id": "log-1789646736608-80",
+      "date": "2026-09-17",
+      "time": "12:05 PM",
+      "action": "Staff Transaction",
+      "details": "Staff অগ্রিম: Farid received ৳3000 (অগ্রিম) via Cash",
+      "user": "Admin"
+    },
+    {
+      "id": "log-1789646734249-96",
+      "date": "2026-09-17",
+      "time": "12:05 PM",
+      "action": "Staff Transaction Deleted",
+      "details": "Deleted staff payment of ৳18000 for Farid",
+      "user": "Admin"
+    },
+    {
+      "id": "log-1789646732196-23",
+      "date": "2026-09-17",
+      "time": "12:05 PM",
+      "action": "Staff Transaction",
+      "details": "Staff বেতন: Farid received ৳18000 (বেতন) via Cash",
+      "user": "Admin"
+    },
+    {
+      "id": "log-1789646693966-913",
+      "date": "2026-09-17",
+      "time": "12:04 PM",
+      "action": "Student Updated",
+      "details": "Updated student bappy (JETC-2026-003)",
+      "user": "Admin"
+    },
+    {
+      "id": "log-1789645876701-197",
+      "date": "2026-09-17",
+      "time": "11:51 AM",
+      "action": "Student Created",
+      "details": "Enrolled bappy (JETC-2026-003) for Forklift course. Fee: ৳12000, Paid: ৳6000",
+      "user": "Admin"
+    },
+    {
+      "id": "log-1789645557605-275",
+      "date": "2026-09-17",
+      "time": "11:45 AM",
+      "action": "Staff Created",
+      "details": "Added staff member: Forid Shekh (Senior Instructor)",
+      "user": "Admin"
+    },
+    {
+      "id": "log-001",
+      "date": "2026-09-17",
+      "time": "09:00 AM",
+      "action": "System Initialized",
+      "details": "Jonota Equipment Training Center ERP database mounted with initial test scenario records.",
+      "user": "System Admin"
+    }
+  ]
+}
